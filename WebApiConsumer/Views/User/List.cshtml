@@ -1,0 +1,11 @@
+﻿@model IEnumerable<WebApiConsumer.Models.User>
+@{
+    ViewData["Title"] = "List";
+    Layout = null;
+}
+
+@foreach (WebApiConsumer.Models.User user in Model)
+{
+    <div>@user.Name</div>
+}
+
